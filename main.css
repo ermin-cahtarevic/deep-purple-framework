@@ -1,0 +1,94 @@
+.container {
+  max-width: 100%;
+  margin: 0 10px;
+}
+
+.row {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: calc(100% / 12 - 20px);
+  margin: 10px;
+  height: 50px;
+  background-color: rgb(255, 0, 200);
+}
+
+.col-2 {
+  width: calc((100% / 12) * 2 - 20px);
+  margin: 10px;
+  height: 50px;
+  background-color: rgb(140, 0, 255);
+}
+
+.col-3 {
+  width: calc((100% / 12) * 3 - 20px);
+  margin: 10px;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+}
+
+.col-4 {
+  min-width: calc((100% / 12) * 4 - 20px);
+  margin: 10px;
+  height: 50px;
+  background-color: black;
+}
+
+.col-5 {
+  width: calc((100% / 12) * 5 - 20px);
+  margin: 10px;
+  height: 50px;
+  background-color: rgb(255, 0, 140);
+}
+
+.col-6 {
+  min-width: calc((100% / 12) * 6 - 20px);
+  margin: 10px;
+  height: 50px;
+  background-color: rgb(119, 119, 119);
+}
+
+.col-7 {
+  width: calc((100% / 12) * 7 - 20px);
+  margin: 10px;
+  height: 50px;
+  background-color: rgb(0, 204, 255);
+}
+
+.col-8 {
+  width: calc((100% / 12) * 8 - 20px);
+  margin: 10px;
+  height: 50px;
+  background-color: red;
+}
+
+.col-9 {
+  width: calc((100% / 12) * 9 - 20px);
+  margin: 10px;
+  height: 50px;
+  background-color: rgb(255, 0, 200);
+}
+
+.col-10 {
+  width: calc((100% / 12) * 10 - 20px);
+  margin: 10px;
+  height: 50px;
+  background-color: rgb(255, 217, 0);
+}
+
+.col-11 {
+  width: calc((100% / 12) * 11 - 20px);
+  margin: 10px;
+  height: 50px;
+  background-color: rgb(0, 26, 255);
+}
+
+.col-12 {
+  width: 100%;
+  margin: 10px;
+  height: 50px;
+  background-color: rgb(123, 255, 0);
+}
