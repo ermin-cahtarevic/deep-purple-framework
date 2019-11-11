@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
 html,
 body,
 div,
@@ -91,6 +93,21 @@ video {
   font-size: 100%;
   vertical-align: baseline;
   box-sizing: border-box;
+}
+
+p,
+span,
+div {
+  font-family: 'News Cycle', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Anton', sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */

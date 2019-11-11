@@ -1,3 +1,5 @@
+/* Grid Framework */
+
 .container {
   max-width: 100%;
   margin: 0 10px;
@@ -91,4 +93,49 @@
   margin: 10px;
   height: 50px;
   background-color: rgb(123, 255, 0);
+}
+
+/* Fonts */
+
+h1 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 25px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Anchor tags */
+
+a {
+  text-decoration-line: none;
+  color: darkgray;
+}
+
+a:hover {
+  color: lightgray;
 }
