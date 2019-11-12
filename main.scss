@@ -95,7 +95,7 @@ $direction: (
 @for $column from 1 through 12 {
   .col-#{$column} {
     padding: 0 10px;
-    width: calc((100% / 12) * #{$column} - 20px);
+    width: calc((100% / 12) * #{$column});
   }
 }
 
@@ -110,6 +110,7 @@ $direction: (
   @media (min-width: #{$screen-resolution}){
     .container {
       min-width: $screen-resolution;
+      max-width: $screen-resolution;
       margin: 0 auto;
     }
 

@@ -196,62 +196,62 @@ img {
 
 .col-1 {
   padding: 0 10px;
-  width: calc((100% / 12) * 1 - 20px);
+  width: calc((100% / 12) * 1);
 }
 
 .col-2 {
   padding: 0 10px;
-  width: calc((100% / 12) * 2 - 20px);
+  width: calc((100% / 12) * 2);
 }
 
 .col-3 {
   padding: 0 10px;
-  width: calc((100% / 12) * 3 - 20px);
+  width: calc((100% / 12) * 3);
 }
 
 .col-4 {
   padding: 0 10px;
-  width: calc((100% / 12) * 4 - 20px);
+  width: calc((100% / 12) * 4);
 }
 
 .col-5 {
   padding: 0 10px;
-  width: calc((100% / 12) * 5 - 20px);
+  width: calc((100% / 12) * 5);
 }
 
 .col-6 {
   padding: 0 10px;
-  width: calc((100% / 12) * 6 - 20px);
+  width: calc((100% / 12) * 6);
 }
 
 .col-7 {
   padding: 0 10px;
-  width: calc((100% / 12) * 7 - 20px);
+  width: calc((100% / 12) * 7);
 }
 
 .col-8 {
   padding: 0 10px;
-  width: calc((100% / 12) * 8 - 20px);
+  width: calc((100% / 12) * 8);
 }
 
 .col-9 {
   padding: 0 10px;
-  width: calc((100% / 12) * 9 - 20px);
+  width: calc((100% / 12) * 9);
 }
 
 .col-10 {
   padding: 0 10px;
-  width: calc((100% / 12) * 10 - 20px);
+  width: calc((100% / 12) * 10);
 }
 
 .col-11 {
   padding: 0 10px;
-  width: calc((100% / 12) * 11 - 20px);
+  width: calc((100% / 12) * 11);
 }
 
 .col-12 {
   padding: 0 10px;
-  width: calc((100% / 12) * 12 - 20px);
+  width: calc((100% / 12) * 12);
 }
 
 .col-md-1 {
@@ -317,6 +317,7 @@ img {
 @media (min-width: 720px) {
   .container {
     min-width: 720px;
+    max-width: 720px;
     margin: 0 auto;
   }
 
@@ -723,6 +724,7 @@ img {
 @media (min-width: 1024px) {
   .container {
     min-width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
   }
 
