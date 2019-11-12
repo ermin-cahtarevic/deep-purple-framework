@@ -719,9 +719,9 @@ img {
   padding: 0 10px;
 }
 
-@media (min-width: 1024) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 1024;
+    max-width: 1024px;
   }
 
   .col-lg-1 {
