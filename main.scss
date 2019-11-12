@@ -55,8 +55,6 @@ img {
 
 /* Grid layout */
 
-
-
 .container {
   width: 100%;
   margin: 0 10px;
@@ -93,3 +91,74 @@ $direction: (
   b: bottom,
   l: left
 );
+
+
+
+@for $column from 1 through 12 {
+  .col-#{$column} {
+    padding: 0 10px;
+    width: calc((100% / 12) * #{$column} - 20px);
+  }
+  
+}
+
+@each $screen-size, $screen-resolution in $screens {
+  @for $column from 1 through 12 {
+    .col-#{$screen-size}-#{$column} {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+  
+  @media (min-width: #{$screen-resolution}){
+    .container { 
+      max-width: $screen-resolution;
+    }
+
+    @for $column from 1 through 12 {
+      .col-#{$screen-size}-#{$column} {
+        flex: 0 0 calc((100% / 12) * #{$column} - 20px);
+        max-width: calc((100% / 12) * #{$column} - 20px);
+      }
+    }
+
+    @each $spacing, $name  in $margin-padding {
+      @each $sizes, $value in $size {
+        .#{$spacing}-#{$screen-size}-#{$sizes} {
+          #{$name}: $value ;
+        }
+
+     
+             
+      @each $side, $name2 in $direction {
+        .#{$spacing}#{$side}-#{$screen-size}-#{$sizes} {
+          #{$name}-#{$name2}: $value;
+
+        }
+      }
+    }
+
+    }
+
+}
+}
+
+
+@each $spacing, $name in $margin-padding {
+  @each $sizes, $value in $size {
+    .#{$spacing}-#{$sizes} {
+      #{$name}: $value;
+    } 
+
+    @each $side, $name2 in $direction {
+      .#{$spacing}#{$side}-#{$sizes} {
+        #{$name}-#{$name2}: $value;
+      }
+    }
+
+
+
+  }
+
+  
+}
