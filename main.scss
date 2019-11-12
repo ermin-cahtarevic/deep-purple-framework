@@ -112,7 +112,7 @@ $direction: (
   
   @media (min-width: #{$screen-resolution}){
     .container { 
-      max-width: $screen-resolution;
+      min-width: $screen-resolution;
     }
 
     @for $column from 1 through 12 {
