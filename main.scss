@@ -92,14 +92,11 @@ $direction: (
   l: left
 );
 
-
-
 @for $column from 1 through 12 {
   .col-#{$column} {
     padding: 0 10px;
     width: calc((100% / 12) * #{$column} - 20px);
   }
-  
 }
 
 @each $screen-size, $screen-resolution in $screens {
@@ -127,39 +124,26 @@ $direction: (
       @each $sizes, $value in $size {
         .#{$spacing}-#{$screen-size}-#{$sizes} {
           #{$name}: $value ;
-        }
-
-     
-             
-      @each $side, $name2 in $direction {
-        .#{$spacing}#{$side}-#{$screen-size}-#{$sizes} {
-          #{$name}-#{$name2}: $value;
-
+        }   
+        @each $side, $name2 in $direction {
+          .#{$spacing}#{$side}-#{$screen-size}-#{$sizes} {
+            #{$name}-#{$name2}: $value;
+          }
         }
       }
     }
-
-    }
-
+  }
 }
-}
-
 
 @each $spacing, $name in $margin-padding {
   @each $sizes, $value in $size {
     .#{$spacing}-#{$sizes} {
       #{$name}: $value;
     } 
-
     @each $side, $name2 in $direction {
       .#{$spacing}#{$side}-#{$sizes} {
         #{$name}-#{$name2}: $value;
       }
     }
-
-
-
   }
-
-  
 }
