@@ -1,202 +1,152 @@
-/* Grid Framework */
-
-.container {
-  max-width: 100%;
-  margin: 0 10px;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
-.row {
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+p,
+span,
+div {
+  font-family: "News Cycle", sans-serif;
 }
 
-.col-1 {
-  width: calc(100% / 12 - 20px);
-  margin: 10px;
-  height: 50px;
-  background-color: rgb(255, 0, 200);
-}
-
-.col-2 {
-  width: calc((100% / 12) * 2 - 20px);
-  margin: 10px;
-  height: 50px;
-  background-color: rgb(140, 0, 255);
-}
-
-.col-3 {
-  width: calc((100% / 12) * 3 - 20px);
-  margin: 10px;
-  height: 50px;
-  background-color: rgb(0, 0, 0);
-}
-
-.col-4 {
-  min-width: calc((100% / 12) * 4 - 20px);
-  margin: 10px;
-  height: 50px;
-  background-color: black;
-}
-
-.col-5 {
-  width: calc((100% / 12) * 5 - 20px);
-  margin: 10px;
-  height: 50px;
-  background-color: rgb(255, 0, 140);
-}
-
-.col-6 {
-  min-width: calc((100% / 12) * 6 - 20px);
-  margin: 10px;
-  height: 50px;
-  background-color: rgb(119, 119, 119);
-}
-
-.col-7 {
-  width: calc((100% / 12) * 7 - 20px);
-  margin: 10px;
-  height: 50px;
-  background-color: rgb(0, 204, 255);
-}
-
-.col-8 {
-  width: calc((100% / 12) * 8 - 20px);
-  margin: 10px;
-  height: 50px;
-  background-color: red;
-}
-
-.col-9 {
-  width: calc((100% / 12) * 9 - 20px);
-  margin: 10px;
-  height: 50px;
-  background-color: rgb(255, 0, 200);
-}
-
-.col-10 {
-  width: calc((100% / 12) * 10 - 20px);
-  margin: 10px;
-  height: 50px;
-  background-color: rgb(255, 217, 0);
-}
-
-.col-11 {
-  width: calc((100% / 12) * 11 - 20px);
-  margin: 10px;
-  height: 50px;
-  background-color: rgb(0, 26, 255);
-}
-
-.col-12 {
-  width: 100%;
-  margin: 10px;
-  height: 50px;
-  background-color: rgb(123, 255, 0);
-}
-
-/* Clearfix */
-
-.clearfix {
-  display: table;
-  clear: both;
-  content: '';
-}
-
-/* Fonts */
-
-h1 {
-  font-size: 30px;
-  line-height: 40px;
-}
-
-h2 {
-  font-size: 25px;
-  line-height: 30px;
-}
-
-h3 {
-  font-size: 22px;
-  line-height: 25px;
-}
-
-h4 {
-  font-size: 18px;
-  line-height: 20px;
-}
-
-h5 {
-  font-size: 16px;
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-  font-size: 14px;
+  font-family: "Anton", sans-serif;
 }
 
-p {
-  font-size: 14px;
-}
-
-/* Anchor tags */
-
-a {
-  text-decoration-line: none;
-  color: darkgray;
-}
-
-a:hover {
-  color: lightgray;
-}
-
-/* Img tags */
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-.f-left {
-  float: left;
-  padding-right: 5px;
-}
-
-.f-right {
-  float: right;
-  padding-left: 5px;
-}
-
-/* Positioning */
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.fixed {
-  position: fixed;
-}
-
-.sticky {
-  position: sticky;
-}
-
-/* Display */
-
-.flex {
-  display: flex;
-}
-
-.inline {
-  display: inline;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.block {
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
