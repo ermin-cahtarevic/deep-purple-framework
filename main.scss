@@ -95,7 +95,7 @@ $direction: (
 @for $column from 1 through 12 {
   .col-#{$column} {
     padding: 0 10px;
-    width: calc((100% / 12) * #{$column});
+    width: percentage($column / 12);
   }
 }
 
@@ -116,8 +116,8 @@ $direction: (
 
     @for $column from 1 through 12 {
       .col-#{$screen-size}-#{$column} {
-        flex: 0 0 calc((100% / 12) * #{$column} - 20px);
-        max-width: calc((100% / 12) * #{$column} - 20px);
+        flex: 0 0 percentage($column / 12);
+        max-width: percentage($column / 12);
       }
     }
 
