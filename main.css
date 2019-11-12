@@ -86,7 +86,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   font-size: 100%;
   vertical-align: baseline;
   box-sizing: border-box;
@@ -132,6 +131,67 @@ q::after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* Images */
+img {
+  width: 100%;
+  height: auto;
+}
+
+.f-left {
+  float: left;
+  padding-right: 5px;
+}
+
+.f-right {
+  float: right;
+  padding-left: 5px;
+}
+
+/* Positioning */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+/* Display */
+.flex {
+  display: flex;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+/* Grid layout */
+.container {
+  width: 100%;
+  margin: 0 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=main.css.map */
