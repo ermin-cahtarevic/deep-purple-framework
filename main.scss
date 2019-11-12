@@ -111,8 +111,9 @@ $direction: (
   }
   
   @media (min-width: #{$screen-resolution}){
-    .container { 
+    .container {
       min-width: $screen-resolution;
+      margin: 0 auto;
     }
 
     @for $column from 1 through 12 {

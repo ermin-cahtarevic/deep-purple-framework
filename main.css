@@ -317,6 +317,7 @@ img {
 @media (min-width: 720px) {
   .container {
     min-width: 720px;
+    margin: 0 auto;
   }
 
   .col-md-1 {
@@ -722,6 +723,7 @@ img {
 @media (min-width: 1024px) {
   .container {
     min-width: 1024px;
+    margin: 0 auto;
   }
 
   .col-lg-1 {
