@@ -42,7 +42,7 @@ Contributions are what make the open source community such an amazing place to l
 
 Ermin Cahtarevic - [Github](https://github.com/ermin-cahtarevic) | erminc@windowslive.com
 
-Melissa Castorena - [Github](hhttps://github.com/mcastorena0316) | mcastorena0316@gmail.com
+Melissa Castorena - [Github](https://github.com/mcastorena0316) | mcastorena0316@gmail.com
 
 
 
