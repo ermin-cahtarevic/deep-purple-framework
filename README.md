@@ -18,6 +18,8 @@ Grid-based Framework built with Sass. This is the last project in Microverse's H
 
 URL to the live version of the site we cloned using this framework: [Jancis Robinson - Clone](https://raw.githack.com/mcastorena0316/jancis-robinson/developer-branch/index.html)
 
+URL to the repository of the cloned website: [Jancis Robinson - Github](https://github.com/mcastorena0316/jancis-robinson/tree/developer-branch)
+
 URL to the original assignment: [Odin Project](https://www.theodinproject.com/courses/html5-and-css3/lessons/design-your-own-grid-based-framework)
 
 This a rebuild of Jancis Robinson's responsive website. The rebuid was done using our own framework. The page used for reference is [Jancis Robinson](https://www.jancisrobinson.com/)
