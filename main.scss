@@ -99,7 +99,7 @@ $direction: (
 @for $column from 1 through 12 {
   .col-#{$column} {
     padding: 0 10px;
-    width: percentage($column / 12);
+    width: percentage($column / 12) !important;
   }
 }
 
