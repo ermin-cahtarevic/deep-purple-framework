@@ -108,8 +108,8 @@ $direction: (
       width: 100%;
     }
   }
-  
-  @media (min-width: #{$screen-resolution}){
+
+  @media (min-width: #{$screen-resolution}) {
     .container {
       min-width: $screen-resolution;
       max-width: $screen-resolution;
@@ -130,8 +130,9 @@ $direction: (
     @each $spacing, $name  in $margin-padding {
       @each $sizes, $value in $size {
         .#{$spacing}-#{$screen-size}-#{$sizes} {
-          #{$name}: $value ;
-        }   
+          #{$name}: $value;
+        }
+
         @each $side, $name2 in $direction {
           .#{$spacing}#{$side}-#{$screen-size}-#{$sizes} {
             #{$name}-#{$name2}: $value;
@@ -146,7 +147,8 @@ $direction: (
   @each $sizes, $value in $size {
     .#{$spacing}-#{$sizes} {
       #{$name}: $value;
-    } 
+    }
+
     @each $side, $name2 in $direction {
       .#{$spacing}#{$side}-#{$sizes} {
         #{$name}-#{$name2}: $value;
