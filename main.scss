@@ -60,6 +60,10 @@ img {
   margin: 0 10px;
 }
 
+.container-fluid {
+  width: 100%;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -112,6 +116,10 @@ $direction: (
       min-width: $screen-resolution;
       max-width: $screen-resolution;
       margin: 0 auto;
+    }
+
+    .container-fluid {
+      width: 100%;
     }
 
     @for $column from 1 through 12 {

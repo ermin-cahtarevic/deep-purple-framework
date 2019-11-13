@@ -189,6 +189,10 @@ img {
   margin: 0 10px;
 }
 
+.container-fluid {
+  width: 100%;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -319,6 +323,10 @@ img {
     min-width: 720px;
     max-width: 720px;
     margin: 0 auto;
+  }
+
+  .container-fluid {
+    width: 100%;
   }
 
   .col-md-1 {
@@ -726,6 +734,10 @@ img {
     min-width: 1024px;
     max-width: 1024px;
     margin: 0 auto;
+  }
+
+  .container-fluid {
+    width: 100%;
   }
 
   .col-lg-1 {
