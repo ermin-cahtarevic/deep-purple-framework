@@ -108,34 +108,67 @@ $direction: (
       width: 100%;
     }
   }
-
-  @media (min-width: #{$screen-resolution}) {
-    .container {
-      min-width: $screen-resolution;
-      max-width: $screen-resolution;
-      margin: 0 auto;
-    }
-
-    .container-fluid {
-      width: 100%;
-    }
-
-    @for $column from 1 through 12 {
-      .col-#{$screen-size}-#{$column} {
-        flex: 0 0 percentage($column / 12);
-        max-width: percentage($column / 12);
+  
+  @if #{$screen-resolution} == '720px' {
+    @media (min-width: #{$screen-resolution}) and (max-width: 1024px){
+      .container {
+        min-width: $screen-resolution;
+        max-width: $screen-resolution;
+        margin: 0 auto;
+      }
+    
+      .container-fluid {
+        width: 100%;
+      }
+    
+      @for $column from 1 through 12 {
+        .col-#{$screen-size}-#{$column} {
+          flex: 0 0 percentage($column / 12);
+          max-width: percentage($column / 12);
+        }
+      }
+    
+      @each $spacing, $name  in $margin-padding {
+        @each $sizes, $value in $size {
+          .#{$spacing}-#{$screen-size}-#{$sizes} {
+            #{$name}: $value ;
+          }   
+          @each $side, $name2 in $direction {
+            .#{$spacing}#{$side}-#{$screen-size}-#{$sizes} {
+              #{$name}-#{$name2}: $value;
+            }
+          }
+        }
       }
     }
-
-    @each $spacing, $name  in $margin-padding {
-      @each $sizes, $value in $size {
-        .#{$spacing}-#{$screen-size}-#{$sizes} {
-          #{$name}: $value;
+  } @else {
+    @media (min-width: #{$screen-resolution}) {
+      .container {
+        min-width: $screen-resolution;
+        max-width: $screen-resolution;
+        margin: 0 auto;
+      }
+    
+      .container-fluid {
+        width: 100%;
+      }
+    
+      @for $column from 1 through 12 {
+        .col-#{$screen-size}-#{$column} {
+          flex: 0 0 percentage($column / 12);
+          max-width: percentage($column / 12);
         }
-
-        @each $side, $name2 in $direction {
-          .#{$spacing}#{$side}-#{$screen-size}-#{$sizes} {
-            #{$name}-#{$name2}: $value;
+      }
+    
+      @each $spacing, $name  in $margin-padding {
+        @each $sizes, $value in $size {
+          .#{$spacing}-#{$screen-size}-#{$sizes} {
+            #{$name}: $value ;
+          }   
+          @each $side, $name2 in $direction {
+            .#{$spacing}#{$side}-#{$screen-size}-#{$sizes} {
+              #{$name}-#{$name2}: $value;
+            }
           }
         }
       }
@@ -147,8 +180,7 @@ $direction: (
   @each $sizes, $value in $size {
     .#{$spacing}-#{$sizes} {
       #{$name}: $value;
-    }
-
+    } 
     @each $side, $name2 in $direction {
       .#{$spacing}#{$side}-#{$sizes} {
         #{$name}-#{$name2}: $value;
@@ -156,3 +188,4 @@ $direction: (
     }
   }
 }
+

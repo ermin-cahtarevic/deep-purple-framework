@@ -294,7 +294,7 @@ img {
   width: 100%;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 720px) and (max-width: 1024px) {
   .container {
     min-width: 720px;
     max-width: 720px;
@@ -645,7 +645,6 @@ img {
     padding-left: 4rem;
   }
 }
-
 .col-lg-1 {
   width: 100%;
 }
@@ -1045,7 +1044,6 @@ img {
     padding-left: 4rem;
   }
 }
-
 .m-auto {
   margin: auto;
 }
@@ -1325,3 +1323,5 @@ img {
 .pl-5 {
   padding-left: 4rem;
 }
+
+/*# sourceMappingURL=main.css.map */
