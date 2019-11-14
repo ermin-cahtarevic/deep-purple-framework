@@ -4,7 +4,7 @@ module.exports = {
   "extends": "stylelint-config-recommended",
   "rules": {
     "at-rule-no-unknown": [true, {
-      "ignoreAtRules": ["function", "if", "for", "each", "include", "mixin"]
+      "ignoreAtRules": ["function", "if", "else", "for", "each", "include", "mixin"]
     }],
     "at-rule-empty-line-before": [ "always", {
       except: [
