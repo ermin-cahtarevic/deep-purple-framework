@@ -16,7 +16,7 @@ Grid-based Framework built with Sass. This is the last project in Microverse's H
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-URL to the live version of the site we cloned using this framework: [Jancis Robinson - Clone](https://raw.githack.com/mcastorena0316/jancis-robinson/developer-branch/index.html)
+URL to the live version of the site we cloned using this framework: [Jancis Robinson - Clone](https://rawcdn.githack.com/mcastorena0316/jancis-robinson/a93213971491e6be7267497399b4e13ae9134eeb/index.html)
 
 URL to the repository of the cloned website: [Jancis Robinson - Github](https://github.com/mcastorena0316/jancis-robinson/tree/developer-branch)
 
