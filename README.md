@@ -9,6 +9,7 @@ Grid-based Framework built with Sass. This is the last project in Microverse's H
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
+* [Get a local copy](#get-a-local-copy)
 * [Contributing](#contributing)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -27,6 +28,24 @@ This a rebuild of Jancis Robinson's responsive website. The rebuid was done usin
 ### Built With
 
 * [Sass](https://sass-lang.com/)
+
+### Get a local copy
+
+**Clone the repository by running this command in your terminal**
+```
+git clone git@github.com:ermin-cahtarevic/deep-purple-framework.git
+```
+
+**Navigate into the newly created folder**
+```
+cd deep-purple-framework
+```
+
+**Open the index.html file in your browser to see the website** 
+
+**Tests**
+
+Tests have not been added yet, they are something that should be added eventually
 
 ## Contributing
 
